@@ -1,0 +1,21 @@
+<div class="container">
+    <!--este div contiene la operacion-->
+    <div class="add">
+        <!--la carga del elemento-->
+        <input type="file" #file class="input-file" (change)="onFilesAdded($event.target)" />
+        <img (click)="addFiles()" class="upload" [src]="url" alt="" />
+        <!--usuario de twitter-->
+        <input type="text" placeholder="@usuario_twitter" [value]="name" (keyup)="onKey($event)" />
+        <!--botón :)-->
+        <button class="button" (click)="add()">Agregar</button>
+    </div>
+</div>
+
+<div class="container">
+    <!--este div contiene la que voy a mostrar-->
+    <div class="card" *ngFor="let speaker of speakerList | async">
+        <img (click)="select(speaker)" [src]="speaker.url" />
+        <p>{{speaker.name}}</p>
+        <p class="delete" (click)="remove(speaker.id)">❌</p>
+    </div>
+</div>

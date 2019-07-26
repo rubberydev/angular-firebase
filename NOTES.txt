@@ -1,0 +1,20 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAi6iyVg_D4xDNb99D83u3ltqzsphKB5DA",
+    authDomain: "angular-fire-workshop-c369b.firebaseapp.com",
+    databaseURL: "https://angular-fire-workshop-c369b.firebaseio.com",
+    projectId: "angular-fire-workshop-c369b",
+    storageBucket: "",
+    messagingSenderId: "885480179291",
+    appId: "1:885480179291:web:0f79b90ef8bfa48c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
